@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:layout_height="match_parent">
+
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RetrofitActivity">
+
+    <Button
+        android:id="@+id/botao_retrofit_id"
+        style="@style/Widget.AppCompat.ActionBar.TabText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#C51162"
+        android:onClick="botaoAcionarRetrofit"
+        android:text="Ativar"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/botao_exibirfotos_retrofit_id"
+        style="@style/Widget.AppCompat.ActionBar.TabText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="#5E35B1"
+        android:onClick="recuperarListaRetrofit"
+        android:text="Fotos Retrofit"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultado_texto_id_retrofit" />
+
+    <Button
+        android:id="@+id/botao_put_atualizarDados_retrofit_id"
+        style="@style/Widget.AppCompat.ActionBar.TabText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:background="#880E4F"
+        android:onClick="botaoResultadoAtualizar"
+        android:text="PUT/Patch atualizar Dados"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultado_text_fotosRetrofit_id" />
+
+    <Button
+        android:id="@+id/botao_DeleteDados_retrofit_id2"
+        style="@style/Widget.AppCompat.ActionBar.TabText"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="8dp"
+        android:background="#550D3E"
+        android:onClick="botaoRemoverDadosRetrofit"
+        android:text="Delete Dados"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultado_texto_PutRetrofit_id" />
+
+    <TextView
+        android:id="@+id/resultado_texto_id_retrofit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="4dp"
+        android:text="Resultado"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/botao_retrofit_id"
+        app:layout_constraintStart_toStartOf="@+id/botao_retrofit_id"
+        app:layout_constraintTop_toBottomOf="@+id/botao_retrofit_id" />
+
+    <TextView
+        android:id="@+id/resultado_text_fotosRetrofit_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:padding="4dp"
+        android:text="Resultado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botao_exibirfotos_retrofit_id" />
+
+    <TextView
+        android:id="@+id/resultado_texto_PutRetrofit_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:padding="3dp"
+        android:text="Resultado"
+        android:textIsSelectable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botao_put_atualizarDados_retrofit_id" />
+
+    <TextView
+        android:id="@+id/texto_resultado_DeleteRetrofit_id"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:padding="3dp"
+        android:text="Resultado"
+        android:textIsSelectable="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botao_DeleteDados_retrofit_id2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
